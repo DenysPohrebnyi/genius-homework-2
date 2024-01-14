@@ -32,8 +32,8 @@
               </li>
             </ul>
           </nav>
-          <address class="header-address">
-            <ul>
+          <div class="header-address">
+            <ul class="header-icon">
               <li>
                 <a href="#">
                   <svg class="address-header-icon" width="32" height="32">
@@ -56,7 +56,7 @@
                 </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
       </div>
     </header>
@@ -65,7 +65,9 @@
         <div class="container">
           <p>Косметологічна клініка</p>
           <h1 class="hero-title">beauty zone</h1>
-          <button class="button" type="submit">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="submit">
+            Замовити дзвінок
+          </button>
           <p class="hero-section-text">
             Запишись та отримай безкоштовну консультацію нашого косметолога
           </p>
@@ -93,34 +95,38 @@
               </div>
             </div>
             <div class="about-us-images">
-              <img
-                class="about-us-image"
-                src="./images/woman-after-our-procedures-1.jpg"
-                alt="Жінка після процедур в клініці 1"
-              />
-              <img
-                class="about-us-image"
-                src="./images/woman-after-our-procedures-2.jpg"
-                alt="Жінка після процедур в клініці 2"
-              />
+              <ul class="about-us-item">
+                <li>
+                  <img
+                    class="about-us-image"
+                    src="./images/woman-after-our-procedures-1.jpg"
+                    alt="Жінка після процедур в клініці 1"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="about-us-image"
+                    src="./images/woman-after-our-procedures-2.jpg"
+                    alt="Жінка після процедур в клініці 2"
+                  />
+                </li>
+                <li>
+                  <svg width="40" height="40">
+                    <use href="./images/icons.svg#icon-star"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg width="16" height="16">
+                    <use href="./images/icons.svg#icon-star"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg width="64" height="64">
+                    <use href="./images/icons.svg#icon-star"></use>
+                  </svg>
+                </li>
+              </ul>
             </div>
-            <ul class="about-us-icon">
-              <li>
-                <svg width="40" height="40">
-                  <use href="./images/icons.svg#icon-star"></use>
-                </svg>
-              </li>
-              <li>
-                <svg width="16" height="16">
-                  <use href="./images/icons.svg#icon-star"></use>
-                </svg>
-              </li>
-              <li>
-                <svg width="64" height="64">
-                  <use href="./images/icons.svg#icon-star"></use>
-                </svg>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
@@ -261,7 +267,7 @@
           </nav>
           <div class="footer-info">
             <address class="footer-address">
-              <ul>
+              <ul class="footer-address-item">
                 <li>
                   <a class="link-footer" href="tel:+380960000007"
                     >+ 38 (096) 000 00 07</a
@@ -276,7 +282,8 @@
                   <a
                     class="link-footer"
                     href="https://maps.app.goo.gl/oU8UAaUTJHUP7mwp6target:_blank"
-                    >Україна, м. Київ, вул. Тараса Шевченка 5</a
+                    >Україна, м. Київ, <br />
+                    вул. Тараса Шевченка 5</a
                   >
                 </li>
                 <li>
@@ -311,6 +318,14 @@
           </div>
         </div>
       </div>
+
+      <div class="backdrop">
+        <div class="modal">
+          <button class="modal-btn-close" type="button">Close</button>
+        </div>
+      </div>
+
+      <script src="./js/modal.js"></script>
     </footer>
   </body>
 </html>
